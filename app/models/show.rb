@@ -9,7 +9,7 @@ class Show < ActiveRecord::Base
   
   def actors_list
     #binding.pry
-   self.actors.name.count
+   self.actors.name
   end
   
 end
