@@ -9,7 +9,7 @@ class Show < ActiveRecord::Base
   
   def actors_list
     #binding.pry
-  self.actors.first_name
+  self.actors.first
   end
   
   #roles = []
