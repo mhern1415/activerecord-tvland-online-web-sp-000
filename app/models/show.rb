@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   belongs_to :network  
   
   def actors_list
-    self.characters.Actor.full_name
+    self.characters.actors.full_name
   end
   
 end
