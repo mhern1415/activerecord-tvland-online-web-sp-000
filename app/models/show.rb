@@ -9,6 +9,8 @@ class Show < ActiveRecord::Base
   
   def actors_list
     binding.pry
+    array = []
+    array << self.actors
   #self.actors.name 
   #["Andrew Lincoln"]
   end
