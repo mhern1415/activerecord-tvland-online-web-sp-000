@@ -8,7 +8,7 @@ class Show < ActiveRecord::Base
   end
   
   def actors_list
-    #binding.pry
+    binding.pry
    self.actors.name
   end
   
