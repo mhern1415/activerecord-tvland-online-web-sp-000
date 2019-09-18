@@ -8,8 +8,18 @@ class Show < ActiveRecord::Base
   end
   
   def actors_list
-    binding.pry
-   self.actors.name
+    #binding.pry
+  list = []
+  array_of_actors = self.actors
+  array_of_actors.join(" - ")
+  self.actors.name
   end
+  
+  roles = []
+    array_of_characters = self.characters.map {|character| character.name}
+    array_of_shows = self.shows.map {|shows| shows.name}
+    role = array_of_characters.concat array_of_shows
+    roles << role.join(" - ")
+    roles
   
 end
