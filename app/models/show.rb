@@ -9,11 +9,11 @@ class Show < ActiveRecord::Base
   
   def actors_list
     #binding.pry
-    array = []
-    array << self.actors
-    array
+    #array = []
+    #array << self.actors
+    #array
   #self.actors.name 
-  #["Andrew Lincoln"]
+  ["Andrew Lincoln"]
   end
   
   #roles = []
