@@ -4,8 +4,8 @@ class Show < ActiveRecord::Base
   belongs_to :network  
   
   def actors_list
-    binding.pry
-    self.characters.actors.full_name
+    #binding.pry
+    self.actors
   end
   
 end
