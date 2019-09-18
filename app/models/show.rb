@@ -12,6 +12,7 @@ class Show < ActiveRecord::Base
   list = []
   array_of_actors = self.actors
   array_of_actors.join(" - ")
+  array_of_actors
   #self.actors.name
   end
   
